@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta charset="UTF-8">
+
+<title>factorial of number</title>  
+</head>  
+<body>  
+  <h1>Sum of odd even digits of a number</h1>
+  <h2>see console</h2>
+  <script>
+  
+  const num = '645457345';
+const isEvenGreater = (str = '') => {
+   let evenSum = 0;
+   let oddSum = 0;
+   for(let i = 0; i < str.length; i++){
+      const el = +str[i];
+      if(el % 2 === 0){
+         evenSum += el;
+      }else{
+         oddSum += el;
+      };
+   };
+   return evenSum > oddSum;
+};
+console.log(isEvenGreater(num));
+</script>  
+</body>  
+</html>  
